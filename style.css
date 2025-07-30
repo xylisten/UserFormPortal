@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background: linear-gradient(#cfe8e8, #a5d0ce);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.form-wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* 移动端自适应 */
+@media (max-width: 600px) {
+  .form-wrapper {
+    max-width: 100%;
+    margin: 15px; /* 左右预留边距，避免贴边 */
+    border-radius: 12px; /* 保持圆角 */
+    padding: 10px; /* 左右内边距也适当减少 */
+    box-shadow: none;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  .el-form-item__label {
+    font-size: 1em;
+  }
+  .submit-button {
+    margin-top: 18px;
+  }
+  .example-text {
+    font-size: 0.9em;
+  }
+}
+
+h1 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+p.desc {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.el-form-item__label {
+  font-weight: bold;
+}
+
+.submit-button {
+  margin-top: 30px;
+}
+
+.example-text {
+  font-size: 0.8em;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.el-icon {
+  vertical-align: middle;
+}
