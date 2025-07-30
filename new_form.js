@@ -1,3 +1,15 @@
+// 新增：解析 URL 参数并输出
+function logUrlParams() {
+  const params = new URLSearchParams(window.location.search)
+  const token = params.get('token')
+  const email = params.get('email')
+  const userName = params.get('userName')
+  console.log('token:', token)
+  console.log('email:', email)
+  console.log('userName:', userName)
+}
+logUrlParams()
+
 const { createApp, ref } = Vue
 
 createApp({
